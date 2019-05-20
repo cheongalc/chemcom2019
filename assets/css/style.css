@@ -1,0 +1,60 @@
+/* @media (min-width: 510px) {
+  body {
+      padding: 1.5rem;
+      margin-right: 0;
+      margin-left: 0;
+  }
+}
+body {
+  position: relative;
+  padding: 1rem;
+  margin: 1rem -15px 0;
+} */
+
+
+.content {
+  height: 98vh;
+  position: relative;
+  overflow: scroll;
+}
+
+.content::-webkit-scrollbar {
+  display: none;
+}
+
+.nav {
+  width: 100%;
+}
+
+.nav-link {
+  padding: 0.25rem 1rem;
+}
+
+
+.section {
+    height: 500px;
+}
+
+.ml-6 {
+  margin-left: 2rem!important;
+}
+
+.content-wrapper {
+  padding-top: 2vh;
+}
+
+.navbar-brand {
+  white-space: normal!important;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+  nav {
+    padding-left: 0px!important;
+  }
+  .content {
+    height: inherit;
+  }
+}
