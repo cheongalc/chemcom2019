@@ -48,9 +48,6 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-  .nav {
-    display: none;
-  }
   nav {
     padding-left: 0px!important;
   }
