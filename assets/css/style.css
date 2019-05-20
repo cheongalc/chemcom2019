@@ -55,3 +55,7 @@ body {
     height: inherit;
   }
 }
+
+.team-members-row {
+  margin: 0px 0px 1rem 0px;
+}
