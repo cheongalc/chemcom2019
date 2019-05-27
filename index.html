@@ -8,8 +8,22 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <!-- Local dependencies -->
         <link rel="stylesheet" href="assets/css/style.css">
+        <script type="text/javascript" async
+          src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
+        </script>
+        <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({
+            tex2jax: {
+              inlineMath: [['$','$'], ['\\(','\\)']],
+              processEscapes: true
+            }
+          });
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     </head>
-    <body>
+    <body onload="loadCitations();">
       <div class="container">
         <div class="row">
           <div class="col-md-4 col-xs-0">
@@ -50,14 +64,15 @@
             </nav>
           </div>
           <div class="content-wrapper col-md-8 col-xs-12">
-            <div class="content" data-spy="scroll" data-target="#myNavbar" data-offset="0">
+            <div class="content" data-spy="scroll" data-target="#myNavbar" data-offset="20">
+
               <h4 id="section1">Introduction</h4>
               <p>This is the webpage of our entry for the 25<sup>th</sup> Chem • Comm scientific communication event organized by the National University of Singapore.</p>
               <p>Our team members are:</p>
-              <div class="row team-members-row">
+              <div class="row card-row">
                 <div class="col-sm-12 col-md-4">
                   <div class="card">
-                    <img src="assets/img/placeholder.png" class="card-img-top">
+                    <img src="assets/img/liaoxinyan.png" class="card-img-top">
                     <div class="card-body">
                       <h6>Liao Xinyan</h6>
                     </div>
@@ -65,7 +80,7 @@
                 </div>
                 <div class="col-sm-12 col-md-4">
                   <div class="card">
-                    <img src="assets/img/placeholder.png" class="card-img-top">
+                    <img src="assets/img/tanjiecong.png" class="card-img-top">
                     <div class="card-body">
                       <h6>Tan Jiecong</h6>
                     </div>
@@ -73,63 +88,386 @@
                 </div>
                 <div class="col-sm-12 col-md-4">
                   <div class="card">
-                    <img src="assets/img/placeholder.png" class="card-img-top">
+                    <img src="assets/img/alcheong.png" class="card-img-top">
                     <div class="card-body">
                       <h6>Alistair Cheong</h6>
                     </div>
                   </div>
                 </div>
               </div>
-
-              <p>The warming of the Earth's atmosphere through human activities has brought about changes in extreme weather and climate events.</p>
+              <p>The warming of the Earth's atmosphere through human activities has brought about changes in extreme weather and climate events.<sup class="citation"></sup></p>
               <p>This has led to various environmental problems, as expounded below.</p>
+              
               <h5 id="section1-1">Heat Waves</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus urna eros, pharetra et orci vel, porttitor aliquet nisl. Maecenas tellus ante, varius quis venenatis quis, ultrices id neque. Maecenas euismod mi sed risus auctor bibendum. Ut quis tristique urna, a dignissim lectus. Maecenas dapibus commodo nunc, ac interdum ligula convallis vitae. Nullam finibus magna a dolor fringilla, ultrices euismod nunc semper. Aenean in risus vel nulla accumsan interdum. Cras suscipit ut erat vel auctor. Vestibulum finibus quis nulla lobortis elementum. Mauris nec tincidunt nunc.</p>
+              <p>A heat wave is a period of excessively hot weather, which may be accompanied by high humidity, especially in oceanic climate countries.<sup class="citation"/></p>
+              <div class="row card-row">
+                <div class="col-md-12">
+                  <div class="card">
+                    <img src="assets/img/heatwave01.png" class="card-img-top">
+                    <div class="card-body">
+                      <h6>The deadly heat waves, floods and fires occurring from Japan to the Middle East, and North America to Europe have clear links to human-caused climate change, according to climate scientists, and this summer's abnormal weather is just the beginning of what's in store for us in coming years.<sup class="citation"></sup></h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p>2018 has not been a smooth sailing year for scientists, with the 2018 heat wave puzzling scientists all over the world, and leading to numerous wildfires and droughts across the globe, such as in places like Australia, California, and the United States.</p>
+              <p>Singapore is heating twice as fast as the rest of the world at 0.25&deg;C per decade. While that might seem minute, Singapore’s maximum daily temperatures could reach 35&deg;C to 37&deg;C by 2100 if carbon emissions continue to rise at the same rate, hence emphasizing on the importance of curbing carbon emissions.<sup class="citation" /></p>
+              
               <h5 id="section1-2">Tropical Storms</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus urna eros, pharetra et orci vel, porttitor aliquet nisl. Maecenas tellus ante, varius quis venenatis quis, ultrices id neque. Maecenas euismod mi sed risus auctor bibendum. Ut quis tristique urna, a dignissim lectus. Maecenas dapibus commodo nunc, ac interdum ligula convallis vitae. Nullam finibus magna a dolor fringilla, ultrices euismod nunc semper. Aenean in risus vel nulla accumsan interdum. Cras suscipit ut erat vel auctor. Vestibulum finibus quis nulla lobortis elementum. Mauris nec tincidunt nunc.</p>
+              <p>In addition, global warming also causes severe tropical storms throughout the globe.</p>
+              <p>In fact, National Geographic has mentioned that 2018 was one of the most active hurricane seasons on record, and speculations are that a warming climate may be making these storms more frequent and more intense.<sup class="citation"></sup></p>
+              <div class="row card-row">
+                <div class="col-sm-12 col-md-4">
+                  <div class="card">
+                    <img src="assets/img/tropicalstorms01.png" class="card-img-top">
+                    <div class="card-body">
+                      <h6>A home is flooded by Thoroughfare Swamp in Goldsboro.</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                  <div class="card">
+                    <img src="assets/img/tropicalstorms02.png" class="card-img-top">
+                    <div class="card-body">
+                      <h6>Flooding caused by the heavy rains of Typhoon Mangkhut in Macau, China.</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                  <div class="card">
+                    <img src="assets/img/tropicalstorms03.png" class="card-img-top">
+                    <div class="card-body">
+                      <h6>In only three days, Michael intensified from a tropical storm to a category 4 hurricane.</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p>The above photos show the devastating impact of Hurricane Florence and Michael, in addition to typhoon Mangkhut, hence emphasizing on the atrocities brought about by climate change.</p>
+              <p>These storms have an adverse effect on countries’ economies, with the United States suffering up to $80 billion dollars due to weather and climate-related catastrophes.<sup class="citation"></sup></p>
+
               <h4 id="section2">Factors of Global Warming</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus urna eros, pharetra et orci vel, porttitor aliquet nisl. Maecenas tellus ante, varius quis venenatis quis, ultrices id neque. Maecenas euismod mi sed risus auctor bibendum. Ut quis tristique urna, a dignissim lectus. Maecenas dapibus commodo nunc, ac interdum ligula convallis vitae. Nullam finibus magna a dolor fringilla, ultrices euismod nunc semper. Aenean in risus vel nulla accumsan interdum. Cras suscipit ut erat vel auctor. Vestibulum finibus quis nulla lobortis elementum. Mauris nec tincidunt nunc.</p>
+              <p>Therefore, the recent Intergovernmental Panel on Climate Change (IPCC) meeting at Incheon, Korea has concluded that “rapid, far-reaching and unprecedented changes in all aspects of society” is required to limit “global warming to 1.5°C” and this would give “clear benefits to people and natural ecosystems in ensuring a more sustainable and equitable society”.<sup class="citation"></sup></p>
+              <p>Here’s a brief rundown of what global warming actually constitutes.</p>
+              <p>The main factor causing global warming and rapid climate change is large concentrations of greenhouse gases being released into the atmosphere, exacerbating the Earth's <mark>greenhouse effect</mark>.</p>
+              <div class="card single-card">
+                <div class="card-body">
+                  <p>The sun provides light energy which is absorbed by the Earth and warms the Earth up. The <mark>greenhouse effect</mark> is the phenomenon whereby greenhouse gases like CO<sub>2</sub> trap the outgoing heat from Earth, preventing it from escaping.</p>
+                  The greenhouse effect is vital for survival by keeping the Earth warm, but profligate burning of fossil fuels by humans has led to a large amount of greenhouse gases being released into the atmosphere. Excessive amounts of heat are trapped and re-radiated on Earth, leading to <mark>global warming</mark>.
+                </div>
+              </div>
+              <div class="row card-row">
+                <div class="col-md-12">
+                  <div class="card">
+                    <img src="assets/img/ghg01.png" class="card-img-top">
+                    <div class="card-body">
+                      <h6>Approximately 77% of greenhouse gases are CO2 emissions, as observed from this pie chart.<sup class="citation"></sup> This has also been reiterated in the IPCC Report 2018, that CO<sub>2</sub> emissions constitute 78% of greenhouse gas emissions from 2000-2010.<sup class="citation"></sup></h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p>Therefore, the main focus of our proposed Chemistry solution would be to tackle the issue of high CO<sub>2</sub> emissions to effectively resolve the pertinent issue of global warming.</p>
+              
               <h4 id="section3">Metal-Organic Frameworks (MOFs)</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus urna eros, pharetra et orci vel, porttitor aliquet nisl. Maecenas tellus ante, varius quis venenatis quis, ultrices id neque. Maecenas euismod mi sed risus auctor bibendum. Ut quis tristique urna, a dignissim lectus. Maecenas dapibus commodo nunc, ac interdum ligula convallis vitae. Nullam finibus magna a dolor fringilla, ultrices euismod nunc semper. Aenean in risus vel nulla accumsan interdum. Cras suscipit ut erat vel auctor. Vestibulum finibus quis nulla lobortis elementum. Mauris nec tincidunt nunc.</p>
+              <p>Our proposed solution is <mark>Metal Organic Frameworks</mark>, abbreviated as <mark>MOFs</mark>.</p>
+              <p>But firstly, what exactly are MOFs?</p>
+              
               <h5 id="section3-1">What are MOFs?</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus urna eros, pharetra et orci vel, porttitor aliquet nisl. Maecenas tellus ante, varius quis venenatis quis, ultrices id neque. Maecenas euismod mi sed risus auctor bibendum. Ut quis tristique urna, a dignissim lectus. Maecenas dapibus commodo nunc, ac interdum ligula convallis vitae. Nullam finibus magna a dolor fringilla, ultrices euismod nunc semper. Aenean in risus vel nulla accumsan interdum. Cras suscipit ut erat vel auctor. Vestibulum finibus quis nulla lobortis elementum. Mauris nec tincidunt nunc.</p>
+              <div class="row card-row">
+                <div class="col-md-12">
+                  <div class="card">
+                    <img src="assets/img/mof01.png" class="card-img-top">
+                    <div class="card-body">
+                      <h6>This is a MOF.<sup class="citation"></sup></h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p>MOFs are a class of compounds consisting of metal ions or clusters coordinated to organic ligands to form one-, two-, or three-dimensional structures. They are a subclass of coordination polymers, with the special feature that they are often porous.<sup class="citation"></sup></p>
+              <p>Put in simple terms, MOFs are crystalline porous structures. They have enormous surface area, high porosity, and depending on the type of MOF, we can vary the pore size and volume.</p>
+              
               <h5 id="section3-2">How are MOFs formed?</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus urna eros, pharetra et orci vel, porttitor aliquet nisl. Maecenas tellus ante, varius quis venenatis quis, ultrices id neque. Maecenas euismod mi sed risus auctor bibendum. Ut quis tristique urna, a dignissim lectus. Maecenas dapibus commodo nunc, ac interdum ligula convallis vitae. Nullam finibus magna a dolor fringilla, ultrices euismod nunc semper. Aenean in risus vel nulla accumsan interdum. Cras suscipit ut erat vel auctor. Vestibulum finibus quis nulla lobortis elementum. Mauris nec tincidunt nunc.</p>
+              <div class="row card-row">
+                <div class="col-md-12">
+                  <div class="card">
+                    <img src="assets/img/mof02.png" class="card-img-top">
+                    <div class="card-body">
+                      <h6>MOFs are made from the dative bonding between metal ions, and organic compounds which link the ions together. In dative bonds, the same atom donates 2 electrons, instead of in a conventional covalent bond where electrons are usually shared.<sup class="citation"></sup></h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
               <h5 id="section3-3">How is Mg-MOF-74 formed?</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus urna eros, pharetra et orci vel, porttitor aliquet nisl. Maecenas tellus ante, varius quis venenatis quis, ultrices id neque. Maecenas euismod mi sed risus auctor bibendum. Ut quis tristique urna, a dignissim lectus. Maecenas dapibus commodo nunc, ac interdum ligula convallis vitae. Nullam finibus magna a dolor fringilla, ultrices euismod nunc semper. Aenean in risus vel nulla accumsan interdum. Cras suscipit ut erat vel auctor. Vestibulum finibus quis nulla lobortis elementum. Mauris nec tincidunt nunc.</p>
+              <p>For example, we'll take a look at how one type of MOF, <mark>Mg-MOF-74</mark>, is synthesized.</p>
+              <p><mark>Mg</mark> means that the MOF is made out of Magnesium cations, while <mark>74</mark> denotes the ligand type.</p>
+              <p>In here, the ligand is called <mark>DOT</mark> or <mark>2,5-dioxidoterephthalate</mark>.</p>
+              <p>Use the carousel below to view the indiviudal steps, or go below to look at the full process.</p>
+              <div id="carouselCaptions" class="carousel slide pointer-event" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselCaptions" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselCaptions" data-slide-to="1"></li>
+                  <li data-target="#carouselCaptions" data-slide-to="2"></li>
+                  <li data-target="#carouselCaptions" data-slide-to="3"></li>
+                  <li data-target="#carouselCaptions" data-slide-to="4"></li>
+                  <li data-target="#carouselCaptions" data-slide-to="5"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="assets/img/mofconst01.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <p>Add hydrated Magnesium Nitrate, which supplies Mg<sup>2+</sup> cations.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/img/mofconst02.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <p>A reaction intermediate known as a Secondary Building Unit (SBU) forms.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/img/mofconst03.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <p>Linking of many SBUs forms this linear hexagonal crystal lattice.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/img/mofconst04.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <p>Terminal ligands can be removed via solvent exchange.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/img/mofconst05.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <p>Terminal ligands removed.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/img/mofconst06.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <p>Activated Mg-MOF-74 is obtained.</p>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselCaptions" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselCaptions" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+              <div class="row card-row">
+                <div class="col-md-12">
+                  <div class="card">
+                    <img src="assets/img/mofconst07.png" class="card-img-top">
+                    <div class="card-body">
+                      <h6>The overall process is illustrated in the above graphic.<sup class="citation"></sup></h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card single-card">
+                <div class="card-body">
+                  <h6>Appendix: <mark>Solvent Exchange</mark></h6>
+                  ...
+                </div>
+              </div>
+              
               <h4 id="section4">What do MOFs do?</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus urna eros, pharetra et orci vel, porttitor aliquet nisl. Maecenas tellus ante, varius quis venenatis quis, ultrices id neque. Maecenas euismod mi sed risus auctor bibendum. Ut quis tristique urna, a dignissim lectus. Maecenas dapibus commodo nunc, ac interdum ligula convallis vitae. Nullam finibus magna a dolor fringilla, ultrices euismod nunc semper. Aenean in risus vel nulla accumsan interdum. Cras suscipit ut erat vel auctor. Vestibulum finibus quis nulla lobortis elementum. Mauris nec tincidunt nunc.</p>
+              <p>Their enormous surface area, high porosity and variable pore volume render them excellent gas <mark>adsorbents</mark>.</p>
+              <div class="card single-card">
+                <div class="card-body">
+                  <h6>On a side note... there is a difference between <mark>absorption</mark> and <mark>a<strong>d</strong>soprtion</mark>.</h6>
+                  Adsorption means that the specific atoms, ions or molecules simply adhere to the surface of the adsorbent. Whereas absorption is when a specific substance enters the volume of the absorbent or is dissolved by the absorbent.
+                </div>
+              </div>
+              <p>Some features of MOFs shown in past research papers are that they:</p>
+              <ul class="list-group single-card">
+                <li class="list-group-item">show <mark>huge potential</mark> in adsorption-related experiments<sup class="citation"></sup></li>
+                <li class="list-group-item">have unique structural characteristics and tuneable porosities which are <mark>superior over conventional porous materials.</mark><sup class="citation"></sup></li>
+                <li class="list-group-item">have a great availability of configurations, higher porosity & surface area and therefore are expected to be <mark>high-capacity adsorbents</mark><sup class="citation"></sup></li>
+              </ul>
+              
               <h4 id="section5">How is CO<sub>2</sub> adsorbed?</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus urna eros, pharetra et orci vel, porttitor aliquet nisl. Maecenas tellus ante, varius quis venenatis quis, ultrices id neque. Maecenas euismod mi sed risus auctor bibendum. Ut quis tristique urna, a dignissim lectus. Maecenas dapibus commodo nunc, ac interdum ligula convallis vitae. Nullam finibus magna a dolor fringilla, ultrices euismod nunc semper. Aenean in risus vel nulla accumsan interdum. Cras suscipit ut erat vel auctor. Vestibulum finibus quis nulla lobortis elementum. Mauris nec tincidunt nunc.</p>
+              <p>How exactly do MOFs facilitate carbon capture?</p>
+              <div class="row card-row">
+                <div class="col-md-12">
+                  <div class="card">
+                    <img src="assets/img/mofcc01.png" class="card-img-top">
+                    <div class="card-body">
+                      <h6>We can zoom in on one of the parts of the MOF structure.</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row card-row">
+                <div class="col-md-12">
+                  <div class="card">
+                    <img src="assets/img/mofcc02.png" class="card-img-top">
+                    <div class="card-body">
+                      <h6>And focus on one single 5-coordinate Magnesium cation (5-coordinate <em>i.e.</em> there are 5 organic ligands coordinately bonded to it).</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row card-row">
+                <div class="col-md-12">
+                  <div class="card">
+                    <img src="assets/img/mofcc03.png" class="card-img-top">
+                    <div class="card-body">
+                      <h6>The section of the Magnesium cation which is <strong>not sterically hindered</strong> is the open metal site.</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row card-row">
+                <div class="col-md-12">
+                  <div class="card">
+                    <img src="assets/img/mofcc04.png" class="card-img-top">
+                    <div class="card-body">
+                      <h6>CO<sub>2</sub> can bind to the open metal site through strong van der Waals interactions.</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
               <h4 id="section6">Selective adsorption of CO<sub>2</sub></h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus urna eros, pharetra et orci vel, porttitor aliquet nisl. Maecenas tellus ante, varius quis venenatis quis, ultrices id neque. Maecenas euismod mi sed risus auctor bibendum. Ut quis tristique urna, a dignissim lectus. Maecenas dapibus commodo nunc, ac interdum ligula convallis vitae. Nullam finibus magna a dolor fringilla, ultrices euismod nunc semper. Aenean in risus vel nulla accumsan interdum. Cras suscipit ut erat vel auctor. Vestibulum finibus quis nulla lobortis elementum. Mauris nec tincidunt nunc.</p>
+              <p>MOFs (at least Mg-MOF-74) <strong>are capable</strong> of selective adsorption of certain gases over other gases. This is due to 2 factors:</p>
+              
               <h5 id="section6-1">Size of molecule</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus urna eros, pharetra et orci vel, porttitor aliquet nisl. Maecenas tellus ante, varius quis venenatis quis, ultrices id neque. Maecenas euismod mi sed risus auctor bibendum. Ut quis tristique urna, a dignissim lectus. Maecenas dapibus commodo nunc, ac interdum ligula convallis vitae. Nullam finibus magna a dolor fringilla, ultrices euismod nunc semper. Aenean in risus vel nulla accumsan interdum. Cras suscipit ut erat vel auctor. Vestibulum finibus quis nulla lobortis elementum. Mauris nec tincidunt nunc.</p>
+              
               <h5 id="section6-2">Polarizability of molecule</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus urna eros, pharetra et orci vel, porttitor aliquet nisl. Maecenas tellus ante, varius quis venenatis quis, ultrices id neque. Maecenas euismod mi sed risus auctor bibendum. Ut quis tristique urna, a dignissim lectus. Maecenas dapibus commodo nunc, ac interdum ligula convallis vitae. Nullam finibus magna a dolor fringilla, ultrices euismod nunc semper. Aenean in risus vel nulla accumsan interdum. Cras suscipit ut erat vel auctor. Vestibulum finibus quis nulla lobortis elementum. Mauris nec tincidunt nunc.</p>
+              <p><mark>Polarizability</mark> refers to the tendency for a molecule's electron cloud to be distorted, allowing it to form van der Waals' interactions.</p>
+              <p>The higher the polarizability, the stronger the interactions with the MOF open metal site.</p>
+              <p>CO<sub>2</sub> has higher polarizability than N<sub>2</sub> or CH<sub>4</sub> as it has the most electrons.</p>
+              
               <h4 id="section7">Mg-MOF-74 in CO<sub>2</sub> capture</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus urna eros, pharetra et orci vel, porttitor aliquet nisl. Maecenas tellus ante, varius quis venenatis quis, ultrices id neque. Maecenas euismod mi sed risus auctor bibendum. Ut quis tristique urna, a dignissim lectus. Maecenas dapibus commodo nunc, ac interdum ligula convallis vitae. Nullam finibus magna a dolor fringilla, ultrices euismod nunc semper. Aenean in risus vel nulla accumsan interdum. Cras suscipit ut erat vel auctor. Vestibulum finibus quis nulla lobortis elementum. Mauris nec tincidunt nunc.</p>
+              <p>Now, let us see why Mg-MOF-74 is one of the best CO<sub>2</sub> adsorbents out there!</p>
+              <div class="card single-card">
+                <div class="card-body">
+                  <h6>As quoted from a research paper, Mg-MOF-74...</h6>
+                  has <mark>excellent selectivity</mark>, <mark>easy regeneration</mark>, and among the <mark>highest dynamic capacities</mark> reported for CO<sub>2</sub> in porous materials.<sup class="citation"></sup>
+                </div>
+              </div>
+              <div class="row card-row">
+                <div class="col-md-12">
+                  <div class="card">
+                    <img src="assets/img/mgmof01.png" class="card-img-top">
+                    <div class="card-body">
+                      <h6>Let’s take a look at this graph showing the results from a CO<sub>2</sub> gas adsorption experiment.</h6>
+                      <ul>
+                        <li>Firstly, Mg-MOF-74 was exposed to a 10mL/min flow of 20% CO<sub>2</sub> in CH<sub>4</sub>. This means 20 percent is CO<sub>2</sub>, 80% is CH<sub>4</sub>.</li>
+                        <li>After adsorption of CO<sub>2</sub> by Mg-MOF-74 took place, the percentage composition of CO<sub>2</sub> in the effluent was zero. This shows that there is complete, selective separation of CO<sub>2</sub> from CH<sub>4</sub>.</li>
+                        <li>After 5 min, CO<sub>2</sub> breakthrough point, where Mg-MOF-74 becomes saturated with CO<sub>2</sub>, so no more CO<sub>2</sub> can be adsorbed.</li>
+                        <li>Any extra CO2 begins to pass through the structure.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              
               <h5 id="section7-1">Clarification</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus urna eros, pharetra et orci vel, porttitor aliquet nisl. Maecenas tellus ante, varius quis venenatis quis, ultrices id neque. Maecenas euismod mi sed risus auctor bibendum. Ut quis tristique urna, a dignissim lectus. Maecenas dapibus commodo nunc, ac interdum ligula convallis vitae. Nullam finibus magna a dolor fringilla, ultrices euismod nunc semper. Aenean in risus vel nulla accumsan interdum. Cras suscipit ut erat vel auctor. Vestibulum finibus quis nulla lobortis elementum. Mauris nec tincidunt nunc.</p>
+              <p>Does this mean that Mg-MOF-74 can only be used for 5 min? <strong>No.</strong></p>
+              <div class="row card-row">
+                <div class="col-md-12">
+                  <div class="card">
+                    <img src="assets/img/mgmof02.png" class="card-img-top">
+                    <div class="card-body">
+                      <h6>Regeneration of Mg-MOF-74</h6>
+                      <p>Once Mg-MOF-74 is saturated, purging it with 25 mL/min CH<sub>4</sub> at room temperature will restore <strong>87%</strong> of its adsorption capacity. Purging at 80&deg;C will allow it to regain its full capacity.</p>
+                      This graph shows us that when the same MOF is regenerated 4 more times, up till cycle 5, its adsorption capacity is still very high.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p>We also have to take into account the <strong>mass</strong> of Mg-MOF-74 used during the researchers' experiment.</p>
+              <div class="card single-card">
+                <div class="card-body">
+                  <h6>As quoted from the same research paper's Appendix Section S5:</h6>
+                  In a representative breakthrough experiment, <mark>191.4 mg Mg-MOF-74</mark> were packed between cotton plugs in the sample cell with stainless steel beads as necessary to fill the volume.<sup class="citation"></sup>
+                </div>
+              </div>
+              <div class="card single-card">
+                <div class="card-body">
+                  <h6>The research paper's results showed that:</h6>
+                  ...we calculate that Mg-MOF-74 takes up 8.9 wt % CO<sub>2</sub> before breakthrough, corresponding to 0.44 molecules of CO<sub>2</sub> per magnesium ion. <mark>This equates to a volumetric capacity of 81 g of CO<sub>2</sub> per liter of adsorbent based on a calculated density of 0.91109 g mL<sup>-1</sup></mark>.<sup class="citation"></sup>
+                </div>
+              </div>
+              <p>Hence we can perform the calculations below:</p>
+              <p>
+                $$
+                \begin{align*}\text{Mass of Mg-MOF-74}\;=&\;191.4\times10^{-3}\ \text{g}\\\text{Density of Mg-MOF-74}\;=&\;0.91109\ \text{gmL}^{-1}\\\text{Volume of Mg-MOF-74}\;=&\;\frac{191.4\times10^{-3}}{0.91109}\ \text{mL}\\\;=&\;2.100780384\times10^{-1}\ \text{mL}\\\;=&\;2.100780384\times10^{-4}\ \text{L}\\\text{Volumetric Capacity}\;=&\;81\ \text{g of CO}_2\ \text{ per L}\\\therefore\text{CO}_2\ \text{adsorbed}=&\;81\times2.100780384\times10^{-4}\ \text{g}\\\;=&\;1.70163211\times10^{-2}\ \text{g}\\\;=&\;1.70163211\ \times10^{-5}\ \text{kg}\end{align*}
+                $$
+              </p>
+              <p>Since this measurement is in units of mass, we must convert it to volume in order for it to be meaningful data. Given that <mark>standard temperature and pressure (s.t.p.) refers to <strong>standard temperature (0&deg;C)</strong> and <strong>standard pressure (100kPa)</strong></mark>:</p>
+              <p>
+                $$
+                \begin{align*}\text{Density of CO}_2\text{ at s.t.p.}\;=&\;1.977\ \text{kgm}^{-3}\\\text{Mass of CO}_2\text{ adsorbed}\;=&\;1.70163211\times10^{-5}\ \text{kg}\\\text{Volume of CO}_2\text{ adsorbed}\;=&\;\frac{1.70163211\times10^{-5}}{1.977}\ \text{m}^3\\\;=&\;8.60714270\times10^{-6}\ \text{m}^3\\\;=&\;8.60714270\ \text{mL}\\\;\approx&\;8.6\ \text{mL}\end{align*}
+                $$
+              </p>
+              <p>This is the volume of CO<sub>2</sub> that <strong>191.4 mg</strong> of Mg-MOF-74 can take up. Now, what if we scale this up to 1 kg?</p>
+              <p>
+                $$
+                \begin{align*}\text{Volume of CO}_2\text{ adsorbed by 1kg Mg-MOF-74}\;=&\;\frac{1\times10^3}{191.4\times10^{-3}}\times8.60714270\ \text{mL}\\\;=&\;4.49693976\ \text{L}\\\;\approx&\;4.5\ \text{L}\end{align*}
+                $$
+              </p>
+              <p>From this calculation, we can conclude that if <mark>flow rate is kept identical at 10 mL min<sup>-1</sup></mark>, a <mark>medical-grade gas canister (10.16cm by 66.04cm)</mark><sup class="citation"></sup> could be filled up in <mark>5 min</mark>.</p>
+              <p>There is another problem with the current method to liberate the stored CO<sub>2</sub>. We started out separating a 10 mL min<sup>-1</sup> mix of 20% CO<sub>2</sub> and 80% CH<sub>4</sub>. <strong>However,</strong> we are using CH<sub>4</sub> to release the captured CO<sub>2</sub>, which may seem counter-intuitive as we are going back to square one.</p>
+              <p>This begs the question: <strong>How could we release the captured CO<sub>2</sub> without purging it with the same gas we are separating it from?</strong></p>
+              <p>Fortunately, there are enhancements we could make to the Mg-MOF-74 such that this problem is rectified.</p>
+              <div class="card single-card">
+                <div class="card-body">
+                  <h6>Introducing LISA, MISA and MaLISA<sup class="citation"></sup></h6>
+                  <p>The solution to the problem is LISA, MISA and MaLISA.</p>
+                  <p>LISA stands for Light Induction Swing Adsorption, MISA stands for Magnetic Induction Swing Adsorption, and MaLISA is a combination of LISA and MISA.</p>
+                </div>
+              </div>
+
               <h4 id="section8">Comparison against existing solutions</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus urna eros, pharetra et orci vel, porttitor aliquet nisl. Maecenas tellus ante, varius quis venenatis quis, ultrices id neque. Maecenas euismod mi sed risus auctor bibendum. Ut quis tristique urna, a dignissim lectus. Maecenas dapibus commodo nunc, ac interdum ligula convallis vitae. Nullam finibus magna a dolor fringilla, ultrices euismod nunc semper. Aenean in risus vel nulla accumsan interdum. Cras suscipit ut erat vel auctor. Vestibulum finibus quis nulla lobortis elementum. Mauris nec tincidunt nunc.</p>
+              <p>Having learnt about the effectiveness of Mg-MOF-74, why then should we use MOFs for carbon capture instead of other current existing solutions?</p>
+              
               <h5 id="section8-1">Amine solutions</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus urna eros, pharetra et orci vel, porttitor aliquet nisl. Maecenas tellus ante, varius quis venenatis quis, ultrices id neque. Maecenas euismod mi sed risus auctor bibendum. Ut quis tristique urna, a dignissim lectus. Maecenas dapibus commodo nunc, ac interdum ligula convallis vitae. Nullam finibus magna a dolor fringilla, ultrices euismod nunc semper. Aenean in risus vel nulla accumsan interdum. Cras suscipit ut erat vel auctor. Vestibulum finibus quis nulla lobortis elementum. Mauris nec tincidunt nunc.</p>
+              <p>A widely used adsorbent in industries nowadays is amine solutions. They are solvents that comprise water and amines (NH<sub>2</sub>), which undergo complex reversible reactions with acidic gases such as CO<sub>2</sub>.</p>
+              <p>When CO<sub>2</sub> is passed into amine solutions, it binds to the NH<sub>2</sub> groups and is removed from the gas. The card below outlines the detailed mechanism of action for one type of amine solution.</p>
+              <div class="card single-card">
+                <div class="card-body">
+                  <h6>Amine Solutions Mechanism of Action</h6>
+                  blah blah take from that research paper<sup class="citation"></sup>
+                </div>
+              </div>
+              <p>However, a problem with amine solutions is its regeneration. Regenerating the amine solutions <mark>requires <strong>diverting high temperature steam</strong> that would normally be effective in making electricity in the power plant</mark>.</p>
+              <p>Instead, if we use  MOFs, which have milder regeneration conditions (room temperature and 87&deg;C as seen above), the high temperature steam need not be diverted. This allows the steam to be used effectively for generation of electricity.</p>
+
+              
               <h5 id="section8-2">Zeolites</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus urna eros, pharetra et orci vel, porttitor aliquet nisl. Maecenas tellus ante, varius quis venenatis quis, ultrices id neque. Maecenas euismod mi sed risus auctor bibendum. Ut quis tristique urna, a dignissim lectus. Maecenas dapibus commodo nunc, ac interdum ligula convallis vitae. Nullam finibus magna a dolor fringilla, ultrices euismod nunc semper. Aenean in risus vel nulla accumsan interdum. Cras suscipit ut erat vel auctor. Vestibulum finibus quis nulla lobortis elementum. Mauris nec tincidunt nunc.</p>
+              <p>Another CO<sub>2</sub> adsorbent is zeolites. They are are crystalline solid structures made of silicon, aluminum and oxygen that <mark><strong>form a framework</strong> with cavities and channels inside where cations, water and/or small molecules may reside</mark>.</p>
+              <div class="card single-card">
+                <div class="card-body">
+                  <h6>Zeolites Mechanism of Action</h6>
+                  blah blah take from more research papers<sup class="citation"></sup>
+                </div>
+              </div>
+              <p>However, zeolites’ pores are <mark>confined by rigid skeletons that are usually difficult to alter</mark>.</p>
+              <p>Instead, structures and properties of MOFs can be well-designed and systematically tuned by the choice of metal-based building blocks and organic linkers. Hence, it can be applied to many scenarios. Such as for adsorbing gas in different pressures, different temperatures, etc.</p>
+              
               <h4 id="section9">Commercial Application of MOFs</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus urna eros, pharetra et orci vel, porttitor aliquet nisl. Maecenas tellus ante, varius quis venenatis quis, ultrices id neque. Maecenas euismod mi sed risus auctor bibendum. Ut quis tristique urna, a dignissim lectus. Maecenas dapibus commodo nunc, ac interdum ligula convallis vitae. Nullam finibus magna a dolor fringilla, ultrices euismod nunc semper. Aenean in risus vel nulla accumsan interdum. Cras suscipit ut erat vel auctor. Vestibulum finibus quis nulla lobortis elementum. Mauris nec tincidunt nunc.</p>
+              <p>Currently, there is still limited commercial Application of MOFs in adsorption of CO<sub>2</sub>.</p>
+              <p>Mosaic Materials, a start-up company from Jeffrey Long’s lab at the University of California, Berkeley, is looking to use MOFs to separate CO<sub>2</sub> from various mixtures, including capturing it from the flue gas emanating from power plants.<sup class="citation"></sup></p>
+              <p>Based on the <a href="#section7-1">above clarifications</a> regarding regeneration of Mg-MOF-74, we have developed our own commercial model of Mg-MOF-74, made with <code>matter.js</code>.<sup class="citation"></sup></p>
+              <button type="button" class="btn btn-primary btn-lg btn-block" onclick="location.href='model.html'">Take me to the commerical model!</button>
+              <p/>
+              
               <h4 id="section10">References</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus urna eros, pharetra et orci vel, porttitor aliquet nisl. Maecenas tellus ante, varius quis venenatis quis, ultrices id neque. Maecenas euismod mi sed risus auctor bibendum. Ut quis tristique urna, a dignissim lectus. Maecenas dapibus commodo nunc, ac interdum ligula convallis vitae. Nullam finibus magna a dolor fringilla, ultrices euismod nunc semper. Aenean in risus vel nulla accumsan interdum. Cras suscipit ut erat vel auctor. Vestibulum finibus quis nulla lobortis elementum. Mauris nec tincidunt nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus urna eros, pharetra et orci vel, porttitor aliquet nisl. Maecenas tellus ante, varius quis venenatis quis, ultrices id neque. Maecenas euismod mi sed risus auctor bibendum. Ut quis tristique urna, a dignissim lectus. Maecenas dapibus commodo nunc, ac interdum ligula convallis vitae. Nullam finibus magna a dolor fringilla, ultrices euismod nunc semper. Aenean in risus vel nulla accumsan interdum. Cras suscipit ut erat vel auctor. Vestibulum finibus quis nulla lobortis elementum. Mauris nec tincidunt nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus urna eros, pharetra et orci vel, porttitor aliquet nisl. Maecenas tellus ante, varius quis venenatis quis, ultrices id neque. Maecenas euismod mi sed risus auctor bibendum. Ut quis tristique urna, a dignissim lectus. Maecenas dapibus commodo nunc, ac interdum ligula convallis vitae. Nullam finibus magna a dolor fringilla, ultrices euismod nunc semper. Aenean in risus vel nulla accumsan interdum. Cras suscipit ut erat vel auctor. Vestibulum finibus quis nulla lobortis elementum. Mauris nec tincidunt nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus urna eros, pharetra et orci vel, porttitor aliquet nisl. Maecenas tellus ante, varius quis venenatis quis, ultrices id neque. Maecenas euismod mi sed risus auctor bibendum. Ut quis tristique urna, a dignissim lectus. Maecenas dapibus commodo nunc, ac interdum ligula convallis vitae. Nullam finibus magna a dolor fringilla, ultrices euismod nunc semper. Aenean in risus vel nulla accumsan interdum. Cras suscipit ut erat vel auctor. Vestibulum finibus quis nulla lobortis elementum. Mauris nec tincidunt nunc.</p>
+              <dl id="citationsListContainer" class="row"/>
             </div>
           </div>
         </div>
       </div>
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-      <script type="text/javascript">
-
-      </script>
+      <script src="assets/js/citations.js"></script>
+      <script src="assets/js/smoothScroll.js"></script>
     </body>
 </html>

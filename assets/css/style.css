@@ -54,8 +54,46 @@ body {
   .content {
     height: inherit;
   }
+  .card {
+    margin-bottom: 1rem;
+  }
+  .single-card {
+    margin: 0;
+  }
 }
 
-.team-members-row {
+.card-row {
   margin: 0px 0px 1rem 0px;
+}
+
+.single-card {
+  margin-bottom: 1rem;
+}
+
+sup.citation {
+  font-weight: bold;
+}
+
+dl {
+  margin: 0 !important;
+}
+
+dl>dt, dd {
+  padding: 0 !important;
+}
+
+.carousel-caption {
+  background-color: rgba(0,0,0,0.45);
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'><path d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/></svg>");
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'><path d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/></svg>");
+}
+
+.col-md-12 {
+  padding: 0 !important;
 }
