@@ -11,6 +11,10 @@ body {
   margin: 1rem -15px 0;
 } */
 
+html {
+  scroll-behavior: smooth;
+}
+
 
 .content {
   height: 98vh;
@@ -96,4 +100,17 @@ dl>dt, dd {
 
 .col-md-12 {
   padding: 0 !important;
+}
+
+.math-container {
+  overflow-x: scroll;
+  padding: none !important;
+}
+
+.math-container::-webkit-scrollbar {
+  display: none;
+}
+
+dl {
+  word-wrap: break-word;
 }
