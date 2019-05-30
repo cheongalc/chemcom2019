@@ -17,7 +17,7 @@ html {
 
 
 .content {
-  height: 98vh;
+  height: 88vh;
   position: relative;
   overflow: scroll;
 }
@@ -29,11 +29,6 @@ html {
 .nav {
   width: 100%;
 }
-
-.nav-link {
-  padding: 0.25rem 1rem;
-}
-
 
 .section {
     height: 500px;
@@ -63,6 +58,12 @@ html {
   }
   .single-card {
     margin: 0;
+  }
+  .model {
+    display: none;
+  }
+  .btn-model-mobile {
+    display: block !important;
   }
 }
 
@@ -114,3 +115,14 @@ dl>dt, dd {
 dl {
   word-wrap: break-word;
 }
+
+.webpage-header-navbar a {
+  padding-bottom: 0rem;
+  padding-top: 0.625rem;
+  font-weight: bolder;
+}
+
+.btn-model-mobile {
+  display: none;
+}
+

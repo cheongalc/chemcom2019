@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Metal-Organic Frameworks</title>
+        <!-- Bootstrap dependencies -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <!-- Local dependencies -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script type="text/javascript" async
+          src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
+        </script>
+        <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({
+            tex2jax: {
+              inlineMath: [['$','$'], ['\\(','\\)']],
+              processEscapes: true
+            }
+          });
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    </head>
+    <body onload="loadCitations(3);">
+      <div class="container">
+      	<div class="row">
+      		<div class="container webpage-header">
+      			<nav class="webpage-header-navbar navbar navbar-expand-lg navbar-light">
+				  <a class="navbar-brand" href="#">Metal-Organic Frameworks</a>
+				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#webpageHeaderToggler" aria-controls="webpageHeaderToggler" aria-expanded="false" aria-label="Toggle navigation">
+				    <span class="navbar-toggler-icon"></span>
+				  </button>
+
+				  <div class="collapse navbar-collapse" id="webpageHeaderToggler">
+				    <ul class="navbar-nav ml-auto">
+				      <li class="nav-item">
+				        <a class="nav-link" href="page1.html">Introduction</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="page2.html">MOFs</a>
+				      </li>
+				      <li class="nav-item active">
+				        <a class="nav-link" href="#">Mg-MOF-74</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="page4.html">Comparison</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="page5.html">Commercial Application</a>
+				      </li>
+				  </div>
+				</nav>
+      		</div>
+      	</div>
+        <div class="row">
+          <div class="col-md-4 col-xs-0">
+            <nav id="myNavbar" class="navbar navbar-light">
+              <nav class="contentNav nav nav-pills flex-column">
+                <a class="nav-link content-nav-link" href="#section7">Mg-MOF-74 in CO<sub>2</sub> capture</a>
+                <a class="nav-link content-nav-link" href="#section8">Clarification</a>
+                <nav class="nav nav-pills flex-column">
+                  <a class="nav-link ml-3 py-0 content-nav-link" href="#section8-1">Regeneration of Mg-MOF-74</a>
+                  <a class="nav-link ml-3 py-0 content-nav-link" href="#section8-2">Clarification by Mass</a>
+                </nav>
+                <a class="nav-link content-nav-link" href="#section9">Low-Energy Release of Adosorbed CO<sub>2</sub></a>
+                <nav class="nav nav-pills flex-column">
+                  <a class="nav-link ml-3 py-0 content-nav-link" href="#section9-1">Light Induction Swing Adsorption</a>
+                  <a class="nav-link ml-3 py-0 content-nav-link" href="#section9-2">Magnetic Induction Swing Adsorption</a>
+                  <a class="nav-link ml-3 py-0 content-nav-link" href="#section9-3">Hybrid MaLISA</a>
+                </nav>
+                <a class="nav-link content-nav-link" href="#section10">What to do with all that CO<sub>2</sub>?</a>
+                <a class="nav-link content-nav-link" href="#sectionR">References</a>
+              </nav>
+            </nav>
+          </div>
+          <div class="content-wrapper col-md-8 col-xs-12">
+            <div class="content" data-spy="scroll" data-target="#myNavbar" data-offset="20">
+
+              <h4 id="section7">Mg-MOF-74 in CO<sub>2</sub> capture</h5>
+              <p>Now, let us see why Mg-MOF-74 is one of the best CO<sub>2</sub> adsorbents out there!</p>
+              <div class="card single-card">
+                <div class="card-body">
+                  <h6>As quoted from a research paper, Mg-MOF-74...</h6>
+                  has <mark>excellent selectivity</mark>, <mark>easy regeneration</mark>, and among the <mark>highest dynamic capacities</mark> reported for CO<sub>2</sub> in porous materials.<sup class="citation"></sup>
+                </div>
+              </div>
+              <div class="row card-row">
+                <div class="col-md-12">
+                  <div class="card">
+                    <img src="assets/img/mgmof01-min.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h6>Let’s take a look at this graph showing the results from a CO<sub>2</sub> gas adsorption experiment.</h6>
+                      <ul>
+                        <li>Firstly, Mg-MOF-74 was exposed to a 10mL/min flow of 20% CO<sub>2</sub> in CH<sub>4</sub>. This means 20 percent is CO<sub>2</sub>, 80% is CH<sub>4</sub>.</li>
+                        <li>After adsorption of CO<sub>2</sub> by Mg-MOF-74 took place, the percentage composition of CO<sub>2</sub> in the effluent was zero. This shows that there is complete, selective separation of CO<sub>2</sub> from CH<sub>4</sub>.</li>
+                        <li>After 5 min, CO<sub>2</sub> breakthrough point, where Mg-MOF-74 becomes saturated with CO<sub>2</sub>, so no more CO<sub>2</sub> can be adsorbed.</li>
+                        <li>Any extra CO2 begins to pass through the structure.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              
+              <h4 id="section8">Clarification</h4>
+              <p>Does this mean that Mg-MOF-74 can only be used for 5 min? <strong>No.</strong></p>
+              <h5 id="section8-1">Regeneration of Mg-MOF-74</h5>
+              <div class="row card-row">
+                <div class="col-md-12">
+                  <div class="card">
+                    <img src="assets/img/mgmof02-min.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h6>Regeneration of Mg-MOF-74</h6>
+                      <p>Once Mg-MOF-74 is saturated, purging it with 25 mL/min CH<sub>4</sub> at room temperature will restore <strong>87%</strong> of its adsorption capacity. Purging at 80&deg;C will allow it to regain its full capacity.</p>
+                      This graph shows us that when the same MOF is regenerated 4 more times, up till cycle 5, its adsorption capacity is still very high.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h5 id="section8-2">Clarification by Mass</h5>
+              <p>We also have to take into account the <strong>mass</strong> of Mg-MOF-74 used during the researchers' experiment.</p>
+              <div class="card single-card">
+                <div class="card-body">
+                  <h6>As quoted from the same research paper's Appendix Section S5:</h6>
+                  In a representative breakthrough experiment, <mark>191.4 mg Mg-MOF-74</mark> were packed between cotton plugs in the sample cell with stainless steel beads as necessary to fill the volume.<sup class="citation"></sup>
+                </div>
+              </div>
+              <div class="card single-card">
+                <div class="card-body">
+                  <h6>The research paper's results showed that:</h6>
+                  ...we calculate that Mg-MOF-74 takes up 8.9 wt % CO<sub>2</sub> before breakthrough, corresponding to 0.44 molecules of CO<sub>2</sub> per magnesium ion. <mark>This equates to a volumetric capacity of 81 g of CO<sub>2</sub> per liter of adsorbent based on a calculated density of 0.91109 g mL<sup>-1</sup></mark>.<sup class="citation"></sup>
+                </div>
+              </div>
+              <p>Hence we can perform the calculations below:</p>
+              <div class="container-fluid math-container">
+                <p>
+                  $$
+                  \begin{align*}\text{Mass of Mg-MOF-74}\;=&\;191.4\times10^{-3}\ \text{g}\\\text{Density of Mg-MOF-74}\;=&\;0.91109\ \text{gmL}^{-1}\\\text{Volume of Mg-MOF-74}\;=&\;\frac{191.4\times10^{-3}}{0.91109}\ \text{mL}\\\;=&\;2.100780384\times10^{-1}\ \text{mL}\\\;=&\;2.100780384\times10^{-4}\ \text{L}\\\text{Volumetric Capacity}\;=&\;81\ \text{g of CO}_2\ \text{ per L}\\\therefore\text{CO}_2\ \text{adsorbed}=&\;81\times2.100780384\times10^{-4}\ \text{g}\\\;=&\;1.70163211\times10^{-2}\ \text{g}\\\;=&\;1.70163211\ \times10^{-5}\ \text{kg}\end{align*}
+                  $$
+                </p>
+              </div>
+              
+              <p>Since this measurement is in units of mass, we must convert it to volume in order for it to be meaningful data. Given that <mark>standard temperature and pressure (s.t.p.) refers to <strong>standard temperature (0&deg;C)</strong> and <strong>standard pressure (100kPa)</strong></mark>:</p>
+              <div class="container-fluid math-container">
+                <p>
+                  $$
+                  \begin{align*}\text{Density of CO}_2\text{ at s.t.p.}\;=&\;1.977\ \text{kgm}^{-3}\\\text{Mass of CO}_2\text{ adsorbed}\;=&\;1.70163211\times10^{-5}\ \text{kg}\\\text{Volume of CO}_2\text{ adsorbed}\;=&\;\frac{1.70163211\times10^{-5}}{1.977}\ \text{m}^3\\\;=&\;8.60714270\times10^{-6}\ \text{m}^3\\\;=&\;8.60714270\ \text{mL}\\\;\approx&\;8.6\ \text{mL}\end{align*}
+                  $$
+                </p>
+              </div>
+              <p>This is the volume of CO<sub>2</sub> that <strong>191.4 mg</strong> of Mg-MOF-74 can take up. Now, what if we scale this up to 1 kg?</p>
+              <div class="container-fluid math-container">
+                <p>
+                  $$
+                  \begin{align*}\text{Volume of CO}_2\text{ adsorbed by 1kg Mg-MOF-74}\;=&\;\frac{1\times10^3}{191.4\times10^{-3}}\times8.60714270\ \text{mL}\\\;=&\;4.49693976\ \text{L}\\\;\approx&\;4.5\ \text{L}\end{align*}
+                  $$
+                </p>
+              </div>
+              <p>From this calculation, we can conclude that if <mark>flow rate is kept identical at 10 mL min<sup>-1</sup></mark>, a <mark>medical-grade gas canister (10.16cm by 66.04cm)</mark><sup class="citation"></sup> could be filled up in <mark>5 min</mark>.</p>
+              <h4 id="section9">Low-Energy Release of Adsorbed CO<sub>2</sub></h4>
+              <p>There is another problem with the current method to liberate the stored CO<sub>2</sub>. We started out separating a 10 mL min<sup>-1</sup> mix of 20% CO<sub>2</sub> and 80% CH<sub>4</sub>. <strong>However,</strong> we are using CH<sub>4</sub> to release the captured CO<sub>2</sub>, which may seem counter-intuitive as we are going back to square one.</p>
+              <p>This begs the question: <strong>How could we release the captured CO<sub>2</sub> without purging it with the same gas we are separating it from?</strong></p>
+              <p>Fortunately, there are enhancements we could make to the Mg-MOF-74 such that this problem is rectified.</p>
+              <p>The content below has been taken with reference to this research paper.<sup class="citation"></sup></p>
+              <h5 id="section9-1">Light Induction Swing Adsorption (LISA)</h5>
+              <h5 id="section9-2">Magnetic Induction Swing Adsorption (MISA)</h5>
+              <h5 id="section9-3">Hybrid MaLISA</h5>
+              <h4 id="section10">What to do with all that CO<sub>2</sub>?</h4>
+              <p>The CO<sub>2</sub> that is adsorbed by the MOFs can be reused in the production of concrete.</p>
+              <p>The carbonation reaction between CO<sub>2</sub> and appropriate Ca compounds results in permanent fixation of the CO<sub>2</sub> in a thermodynamically stable CaCO<sub>3</sub>.</p>
+              <p>Carbonation curing of concrete offers several technical benefits to the final products, such as rapid strength gain and the decreased water permeability of the concrete.<sup class="citation"></sup></p>
+
+              <button type="button" class="btn btn-primary btn-lg btn-block" onclick="location.href='page4.html'">Take me to the next page!</button>
+              <p/>
+              <h4 id="sectionR">References</h5>
+              <dl id="citationsListContainer" class="row"/>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="assets/js/citations.js"></script>
+      <script src="assets/js/smoothScroll.js"></script>
+    </body>
+</html>

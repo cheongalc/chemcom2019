@@ -1,7 +1,7 @@
-function loadCitations() {
+function loadCitations(pageNum) {
   let citationsFootnoteList = document.getElementsByClassName('citation')
   let citationsListContainer = document.getElementById('citationsListContainer');
-  fetch('assets/txt/citations.txt').then(response => response.text()).then(
+  fetch(`assets/txt/citations${pageNum}.txt`).then(response => response.text()).then(
     txt => {
       txt = txt.split('\n');
       for (i = 0; i < citationsFootnoteList.length; i++) {

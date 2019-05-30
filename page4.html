@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Metal-Organic Frameworks</title>
+        <!-- Bootstrap dependencies -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <!-- Local dependencies -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    </head>
+    <body onload="loadCitations(4);">
+      <div class="container">
+      	<div class="row">
+      		<div class="container webpage-header">
+      			<nav class="webpage-header-navbar navbar navbar-expand-lg navbar-light">
+				  <a class="navbar-brand" href="#">Metal-Organic Frameworks</a>
+				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#webpageHeaderToggler" aria-controls="webpageHeaderToggler" aria-expanded="false" aria-label="Toggle navigation">
+				    <span class="navbar-toggler-icon"></span>
+				  </button>
+
+				  <div class="collapse navbar-collapse" id="webpageHeaderToggler">
+				    <ul class="navbar-nav ml-auto">
+				      <li class="nav-item">
+				        <a class="nav-link" href="page1.html">Introduction</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="page2.html">MOFs</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="page3.html">Mg-MOF-74</a>
+				      </li>
+				      <li class="nav-item active">
+				        <a class="nav-link" href="#">Comparison</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="page5.html">Commercial Application</a>
+				      </li>
+				  </div>
+				</nav>
+      		</div>
+      	</div>
+        <div class="row">
+          <div class="col-md-4 col-xs-0">
+            <nav id="myNavbar" class="navbar navbar-light">
+              <nav class="contentNav nav nav-pills flex-column">
+                <a class="nav-link content-nav-link" href="#section11">Comparison against existing solutions</a>
+                <a class="nav-link content-nav-link content-nav-link" href="#section12">Amine solutions</a>
+              	<nav class="nav nav-pills flex-column">
+                  <a class="nav-link ml-3 py-0 content-nav-link" href="#section12-1">What are amine solutions?</a>
+                  <a class="nav-link ml-3 py-0 content-nav-link" href="#section12-2">How do they work?</a>
+                  <a class="nav-link ml-3 py-0 content-nav-link" href="#section12-3">Problems with amine solutions</a>
+                  <a class="nav-link ml-3 py-0 content-nav-link" href="#section12-4">Problem solved with MOFs!</a>
+                </nav>
+                <a class="nav-link content-nav-link content-nav-link" href="#section13">Zeolites</a>
+                <nav class="nav nav-pills flex-column">
+                  <a class="nav-link ml-3 py-0 content-nav-link" href="#section13-1">What are zeolites?</a>
+                  <a class="nav-link ml-3 py-0 content-nav-link" href="#section13-2">How do they work?</a>
+                  <a class="nav-link ml-3 py-0 content-nav-link" href="#section13-3">Problems with zeolites</a>
+                  <a class="nav-link ml-3 py-0 content-nav-link" href="#section11-4">Problem solved with MOFs!</a>
+                </nav>
+                <a class="nav-link content-nav-link content-nav-link" href="#sectionR">References</a>
+              </nav>
+            </nav>
+          </div>
+          <div class="content-wrapper col-md-8 col-xs-12">
+            <div class="content" data-spy="scroll" data-target="#myNavbar" data-offset="20">
+
+              <h4 id="section11">Comparison against existing solutions</h5>
+              <p>Having learnt about the effectiveness of Mg-MOF-74, why then should we use MOFs for carbon capture instead of other current existing solutions?</p>
+              
+              <h4 id="section12">Amine solutions</h4>
+              <h5 id="section12-1">What are amine solutions?</h5>
+              <p>A widely used adsorbent in industries nowadays is amine solutions. They are solvents that comprise water and amines (NH<sub>2</sub>), which undergo complex reversible reactions with acidic gases such as CO<sub>2</sub>.</p>
+              <h5 id="section12-2">How do they work?</h5>
+              <p>When CO<sub>2</sub> is passed into amine solutions, it binds to the NH<sub>2</sub> groups and is removed from the gas. The card below outlines the detailed mechanism of action for one type of amine solution.<sup class="citation"></sup></p>
+              <div class="card single-card">
+                <div class="card-body">
+                  <h6>Amine Solutions Mechanism of Action</h6>
+                  blah blah take from that research paper
+                </div>
+              </div>
+              <h5 id="section12-3">Problems with amine solutions</h5>
+              <p>However, a problem with amine solutions is its regeneration. Regenerating the amine solutions <mark>requires <strong>diverting high temperature steam</strong> that would normally be effective in making electricity in the power plant</mark>.</p>
+              <h5 id="section12-4">Problem solved with MOFs!</h5>
+              <p>Instead, if we use  MOFs, which have milder regeneration conditions (room temperature and 87&deg;C as seen above), the high temperature steam need not be diverted. This allows the steam to be used effectively for generation of electricity.</p>
+
+              
+              <h5 id="section13">Zeolites</h5>
+              <h5 id="section13-1">What are zeolites?</h5>
+              <p>Another CO<sub>2</sub> adsorbent is zeolites. They are are crystalline solid structures made of silicon, aluminum and oxygen that <mark><strong>form a framework</strong> with cavities and channels inside where cations, water and/or small molecules may reside</mark>.</p>
+              <h5 id="section13-2">How do they work?</h5>
+              The following card illustrates the detailed mechanism of action for one type of zeolite.
+              <div class="card single-card">
+                <div class="card-body">
+                  <h6>Zeolites Mechanism of Action</h6>
+                  blah blah take from more research papers<sup class="citation"></sup>
+                </div>
+              </div>
+              <h5 id="section13-3">Problems with zeolites</h5>
+              <p>However, zeolites’ pores are <mark>confined by rigid skeletons that are usually difficult to alter</mark>.</p>
+              <h5 id="section13-4">Problem solved with MOFs!</h5>
+              <p>Instead, structures and properties of MOFs can be well-designed and systematically tuned by the choice of metal-based building blocks and organic linkers. Hence, it can be applied to many scenarios. Such as for adsorbing gas in different pressures, different temperatures, etc.</p>
+
+              <button type="button" class="btn btn-primary btn-lg btn-block" onclick="location.href='page5.html'">Take me to the next page!</button>
+              <p/>
+              <h4 id="sectionR">References</h5>
+              <dl id="citationsListContainer" class="row"/>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="assets/js/citations.js"></script>
+      <script src="assets/js/smoothScroll.js"></script>
+    </body>
+</html>

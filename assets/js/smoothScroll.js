@@ -1,6 +1,6 @@
 if (isOnMobile()) {
 	// you are on a mobile device
-	$('a.nav-link').on('click', function (e) {
+	$('a.content-nav-link').on('click', function (e) {
 		e.preventDefault();
 		let hash = this.hash;
 		// let currScrollPosition = $('div.content').scrollTop();
@@ -9,11 +9,11 @@ if (isOnMobile()) {
 		return false;
 	});
 } else {
-	$('a.nav-link').on('click', function (e) {
+	$('a.content-nav-link').on('click', function (e) {
 		e.preventDefault();
 		let hash = this.hash;
 		let currScrollPosition = $('div.content').scrollTop();
-		let hashPosition = $(hash).offset().top-15;
+		let hashPosition = $(hash).offset().top-70;
 		$('div.content').animate({
 			scrollTop: currScrollPosition+hashPosition
 		}, 1000, 'swing', function () {
@@ -38,7 +38,7 @@ function setupSmoothScrollForCitations() {
 			e.preventDefault();
 			let hash = this.hash;
 			let currScrollPosition = $('div.content').scrollTop();
-			let hashPosition = $(hash).offset().top-15;
+			let hashPosition = $(hash).offset().top-70;
 			$('div.content').animate({
 				scrollTop: currScrollPosition+hashPosition
 			}, 1000, 'swing', function () {
