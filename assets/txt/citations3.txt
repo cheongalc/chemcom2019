@@ -3,4 +3,5 @@ ibid.
 ibid.
 "Gas Cylinder." Wikipedia. May 01, 2019. Accessed May 27, 2019. <a href="https://en.wikipedia.org/wiki/Gas_cylinder">https://en.wikipedia.org/wiki/Gas_cylinder</a>.
 Li, Haiqing, and Matthew R. Hill. "Low-Energy CO2 Release from Metal–Organic Frameworks Triggered by External Stimuli." <em>Accounts of Chemical Research</em> 50, no. 4 (March 08, 2017): 778-86. Accessed May 27, 2019. doi:10.1021/acs.accounts.6b00591.
-what to do with all dat carbon dioxide
+Shao, Y., S. Monkman, and A. J. Boyd. "Recycling Carbon Dioxide into Concrete: A Feasibility Study." <em>2010 Concrete Sustainability Conference</em>, 2010. Accessed June 1, 2019. <a href="https://www.researchgate.net/publication/266495001_Recycling_carbon_dioxide_into_concrete_a_feasibility_study/citation/download">https://www.researchgate.net/publication/266495001_Recycling_carbon_dioxide_into_concrete_a_feasibility_study/citation/download</a>.
+ibid.
