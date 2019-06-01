@@ -150,7 +150,7 @@ function loadModel() {
 					topMOF.MOFCapacity++;
 					topMOF.render.fillStyle = pSBC(0.025, topMOF.render.fillStyle, pureRedColor, true);
 					World.remove(engine.world, currBody);
-					if (topMOF.MOFCapacity >= 75) {
+					if (topMOF.MOFCapacity >= 50) {
 						topMOF.MOFCapacity = 0;
 						topMOF.isCoolDown = true;
 						turnRotatingSeparator(topMOF);
@@ -164,7 +164,7 @@ function loadModel() {
 					bottomMOF.MOFCapacity++;
 					bottomMOF.render.fillStyle = pSBC(0.025, bottomMOF.render.fillStyle, pureRedColor, true);
 					World.remove(engine.world, currBody);
-					if (bottomMOF.MOFCapacity >= 75) {
+					if (bottomMOF.MOFCapacity >= 50) {
 						bottomMOF.MOFCapacity = 0;
 						bottomMOF.isCoolDown = true;
 						turnRotatingSeparator(bottomMOF);
